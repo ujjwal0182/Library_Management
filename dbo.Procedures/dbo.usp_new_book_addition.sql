@@ -26,11 +26,11 @@ IF @update = 0 AND NOT EXISTS (SELECT 1 FROM Books WHERE title=@title AND author
 BEGIN
 	INSERT INTO Books
 	(
-		title	,author		,publisher		,genre		,total_qty 	,available_qty
+		title, author, publisher, genre, total_qty, available_qty
 	) 
 	VALUES 
 	(
-		@title		,@author	,@publisher		,@genre		,@total_qty		,@available_qty
+		@title, @author, @publisher, @genre, @total_qty, @available_qty
 	)
 END
 
@@ -54,4 +54,4 @@ GO
 exec usp_new_book_addition 'You Can not','James Willision','GorakhPur','Self-Awareness','25','24'
 exec usp_new_book_addition 'You Can not','James Willision','GorakhPur','Self-Awareness','25','24',1
 
-SELECT * FROM Books
+
