@@ -4,7 +4,7 @@ SET ANSI_NULLS ON
 GO
 
 
-IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID('dbo.usp_Issued_Book') and OBJECTPROPERTY(id,'IsProecure') = 1)
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID('dbo.usp_Issued_Book') and OBJECTPROPERTY(id,'IsProcedure') = 1)
 DROP PROCEDURE usp_Issued_Book
 GO
 
